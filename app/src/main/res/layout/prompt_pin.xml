@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#80CBC4">
+
+        <TextView
+            android:id="@+id/pin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:text="New Pin"
+            android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+            android:textColor="#444444" />
+
+        <EditText
+            android:id="@+id/pin_field"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:maxLength="4">
+
+            <requestFocus />
+
+        </EditText>
+
+    </TableRow>
+
+
+</TableLayout>

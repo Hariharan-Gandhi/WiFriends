@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="finding_service">Finding local services</string>
+    <string name="btn_send">Send</string>
+    <string name="txt_hint">Type Message</string>
+    <string name="app_name">WiFriends</string>
+    <string name="action_settings">WiFriends</string>
+    <string name="sp_file_name">WiFriends_Shared</string>
+    <string name="sp_field_my_mac">my_mac</string>
+    <string name="sp_field_service_state">WiFiends_service</string>
+    <string name="add_friends_mac_empty">Please Enter a valid MAC address</string>
+    <string name="add_friends_start_beam">Please hold both devices next to each other</string>
+    <string name="add_friends_ready_to_go">All Set Ready to Go</string>
+    <string name="title_activity_friends_profile">FriendsProfile</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_friends_list">FriendsList</string>
+    <string name="title_activity_accept_friend_request">AcceptFriendRequest</string>
+    <string name="title_activity_request_friends_beam">RequestFriendsBeam</string>
+    <string name="title_activity_main">Friendship is worth Living</string>
+    <string name="title_activity_sub">SubActivity</string>
+    <string name="next">Next</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="search_movies">Search Movies</string>
+    <string name="myprofile">My Profile</string>
+    <string name="editprofile">Edit Profile</string>
+    <string name="friendslist">Friend List</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+    <string name="addfriend">Add Friends</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="title_activity_base_home">BaseHome</string>
+    <string name="status_update">Status Update</string>
+    <string name="send_friend_request">Send Friend Request</string>
+    <string name="status_header">STATUS</string>
+    <string name="about_header">About</string>
+    <string name="happy_header">Happy Event of this week</string>
+    <string name="annoy_header">Annoying thing of the Week</string>
+    <string name="friends_status_header">What are your friends saying</string>
+    <string name="title_activity_generate_store_key">GenerateStoreKey</string>
+
+    <string name="title_activity_about">About WiFriends</string>
+    <string name="about_wifriends">WiFriends Social Network</string>
+    <string name="about_version">Version 1.0</string>
+    <string name="title_activity_about_help">Help</string>
+    <string name="about_help">WiFriends is a decentralised
+    social network which will help us keep exchange the profile information
+    with friends whom we meet in everyday life.</string>
+
+</resources>

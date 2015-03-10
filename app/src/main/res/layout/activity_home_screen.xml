@@ -1,0 +1,102 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tud.cnlab.wifriends.profilepage.HomeScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+        <LinearLayout
+            android:id="@+id/linearContents"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/app_bar"
+            android:background="@color/background"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/profilePic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_weight="3"
+                android:adjustViewBounds="true"
+                android:background="@color/colorPrimaryLightHelp"
+                android:cropToPadding="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/prof" />
+
+            <EditText
+                android:id="@+id/statusView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_weight="5"
+                android:background="@color/colorPrimaryLight"
+                android:hint="@string/status_update"
+                android:imeActionLabel="Save Status"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:textColorHint="@color/colorSecondaryText"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/editStatus"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryLightHelp"
+                android:src="@android:drawable/ic_menu_edit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/friends_status_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearContents"
+            android:background="#F9A825"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/f_statusHeader"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_weight="5"
+                android:padding="5dp"
+                android:text="@string/friends_status_header"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/fontColor" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/friends_status_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/friends_status_header"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="tud.cnlab.wifriends.profilepage.NavigationDrawerFragment"
+        android:layout_width="@dimen/nav_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" />
+</android.support.v4.widget.DrawerLayout>

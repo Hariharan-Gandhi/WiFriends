@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tud.cnlab.wifriends" >
+
+    <uses-sdk android:minSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <!-- Google Play filtering -->
+    <uses-feature
+        android:name="android.hardware.wifi.direct"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <service
+            android:name=".WiFriendsService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        
+        <activity
+            android:name=".addfriends.AddFriendsBeam"
+            android:configChanges="orientation|screenSize"
+            android:label="Start Beaming Friendship" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/tud.cnlab.wifriends" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WiFriends"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name=".profilepage.MyProfile"
+            android:configChanges="orientation|screenSize"
+            android:label="My Profile"
+            android:parentActivityName=".WiFriends" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".profilepage.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".profilepage.EditMyProfile"
+            android:configChanges="orientation|screenSize"
+            android:label="My Profile"
+            android:parentActivityName=".WiFriends" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".profilepage.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".addfriends.AddFriends"
+            android:configChanges="orientation|screenSize"
+            android:label="Add Friends"
+            android:parentActivityName=".WiFriends" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".profilepage.HomeScreen" />
+        </activity>
+
+        <!--
+                <receiver
+                    android:name=".MyReceiver"
+                    android:enabled="true"
+                    android:exported="true"></receiver>
+        -->
+
+        <activity
+            android:name=".profilepage.FriendsProfile"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_friends_profile"
+            android:parentActivityName=".WiFriends" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tud.cnlab.wifriends.WiFriends" />
+        </activity>
+        <activity
+            android:name=".profilepage.FriendsList"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_friends_list"
+            android:parentActivityName=".WiFriends" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tud.cnlab.wifriends.WiFriends" />
+        </activity>
+        <activity
+            android:name=".addfriends.AcceptFriendRequest"
+            android:label="@string/title_activity_accept_friend_request"
+            android:parentActivityName=".addfriends.AddFriends" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".addfriends.AddFriends" />
+        </activity>
+        <activity
+            android:name=".addfriends.RequestFriendsBeam"
+            android:label="@string/title_activity_request_friends_beam"
+            android:parentActivityName=".addfriends.AddFriends" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".addfriends.AddFriends" />
+        </activity>
+        <activity
+            android:name=".profilepage.HomeScreen"
+            android:label="@string/title_activity_home_screen"
+            android:parentActivityName=".WiFriends"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tud.cnlab.wifriends.WiFriends" />
+        </activity>
+        <activity
+            android:name=".profilepage.BaseHome"
+            android:label="@string/title_activity_base_home" />
+        <activity
+            android:name=".BluetoothKeyExchange.GenerateStoreKey"
+            android:label="@string/title_activity_generate_store_key"
+            android:parentActivityName=".addfriends.AddFriends" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="tud.cnlab.wifriends.addfriends.AddFriends" />
+        </activity>
+
+        <activity
+            android:name=".profilepage.about"
+            android:label="@string/title_activity_about"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".WiFriends" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".profilepage.HomeScreen" />
+        </activity>
+        <activity
+            android:name=".profilepage.about_help"
+            android:label="@string/title_activity_about_help"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".WiFriends" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".profilepage.HomeScreen" />
+        </activity>
+        
+
+    </application>
+
+</manifest>
