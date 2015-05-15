@@ -599,9 +599,3 @@ public class WiFriends extends Activity implements
         Log.d(TAG, "Came into Override 1");
     }
 }
-
-
-// ce:fa:00:ff:e8:0b HN
-// e6:92:fb:43:78:f4 HT
-// 66:b3:10:d4:44:be ht
-// ce:fa:00:ff:e7:27 hn
