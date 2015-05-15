@@ -594,8 +594,4 @@ public class WiFriends extends Activity implements
         Intent viewMyProfile = new Intent(WiFriends.this, HomeScreen.class);
         startActivity(viewMyProfile);
     }
-
-    public void connectP2p1(WiFiP2pService wifiP2pService) {
-        Log.d(TAG, "Came into Override 1");
-    }
 }
