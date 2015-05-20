@@ -108,9 +108,6 @@ public class WiFriends extends Activity implements
         wf = this;
         setContentView(R.layout.activity_wi_friends_home);
         statusTxtView = (TextView) findViewById(R.id.status_text);
-        /*context = getApplicationContext();
-        sharedPref = context.getSharedPreferences(getString(R.string.sp_file_name), Context.MODE_PRIVATE);
-        MY_MAC_ADDRESS = sharedPref.getString(getString(R.string.sp_field_my_mac), null);*/
 
         //intentFilter.addAction(WifiManager.WIFI_STATE_CHANGED_ACTION);
         intentFilter.addAction(WifiP2pManager.WIFI_P2P_STATE_CHANGED_ACTION);
