@@ -4,15 +4,22 @@ WiFriends
 
 Descritption:
 -----------
-Decentralized Social Networking App using WiFi Direct
+**One-Liner:**  Decentralized Social Networking App using WiFi Direct 
 (An Android App which helps in Socializing with Trusted Friends in
 Proximity using D2D Communication)
 
+As a part of the research idea, from the [Peer-to-Peer Systems Engineering Lab, TU Darmstad](http://www.ps.tu-darmstadt.de/teaching/cnlab/), to estimate the feasibility of latest mobile technology in creating an **ad-hoc peer to peer networks**, this project involved developing a Decentralized Social Networking application, that uses **Wi-Fi P2P API** for the overlay creation and it dynamically discovers peers in proximity to exchange profile information in `JSON` format.
+
+The project considers **security** as a major aspect of concern in such ad-hoc communication and addresses by data encryption using pre-shared key `(AES 256)` exchanged securely via `Near Field Communication(NFC)` during the add friend stage. _Material Design UI_ (Android Lollipop) is also incorporated into the application.
+
+**Technologies Tag:** `Android`, `Java`, `SQLite`, `WifiP2P API`, `Cryptography`, `AES 256 Encryption`, `Spongy Castle API`, `Git`, `Material Design UI`, `Android Lollipop`, `Android Studio`
+
+
 Key features: 
 ------------
-* Decentralized and without Internet - using Wi-Fi P2p API of Android
-* Exchanges only with Trusted Friends - using NFC and local PINs to securely Add Friends to Trust Zone
-* Collected profiles are stored Locally on user's devices - using SQLite DataHandlers and JSON objects
+* _Decentralized and without Internet_ - using Wi-Fi P2p API of Android
+* Exchanges only with _Trusted Friends_ - using NFC and local PINs to securely Add Friends to Trust Zone
+* Collected profiles are _stored Locally_ on user's devices - using `SQLite` DataHandlers and `JSON` objects
 *  User can later browse friends Profile - using Profile View UIs
 *  Automatic Content Exchange whenever friends are in Proximity via any D2D Communication Technique(WifiP2P) Network Service Discovery 
 *  The app should be Secure - Only friends can exchange Contents  - using Encrypted exchange of Profile data AES-256 
