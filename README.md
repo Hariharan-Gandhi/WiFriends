@@ -1,14 +1,14 @@
 WiFriends
 =========
-### Project: CN-Lab PS TU Darmstadt (WiSe-2014/15)
+> ### Project: CN-Lab PS TU Darmstadt (WiSe-2014/15)
 
-
-
+Descritption:
+-----------
 Decentralized Social Networking App using WiFi Direct
 (An Android App which helps in Socializing with Trusted Friends in
 Proximity using D2D Communication)
 
-Key features 
+Key features: 
 ------------
 * Decentralized and without Internet - using Wi-Fi P2p API of Android
 * Exchanges only with Trusted Friends - using NFC and local PINs to securely Add Friends to Trust Zone
@@ -27,3 +27,9 @@ Code Modules:
 * **Module:** `datahandlers`
 * **Module:** `profilepage`
 
+####Tutor:
+Leonhard Nobach, M.Sc.
+
+#### Members:
++ Hariharan Gandhi (hariharangandhi17@gmail.com)
++ Harini Gunabalan (harinigunabalan24@gmail.com)
