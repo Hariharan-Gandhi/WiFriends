@@ -52,8 +52,8 @@ Screenshots:
 * The News Feed with the friend's current Status is shown on two friend devices. 
 ![Alt text](https://cloud.githubusercontent.com/assets/9555615/8251639/8abb7c80-167e-11e5-987b-f57a2d4b9f68.jpg "Before Exchange")
 
-**Users Status Updated**
-* The user's update their status on their respective devices.
+**Users' Statuses Updated**
+* The users update their status on their respective devices.
 ![Alt text](https://cloud.githubusercontent.com/assets/9555615/8251640/8cca88e0-167e-11e5-9459-bb712392aa9f.jpg "Before Exchange")
 
 **News Feed After Profile Exchange**
