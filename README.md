@@ -44,7 +44,7 @@ Leonhard Nobach, M.Sc.
 Screenshots:
 --------
 
-**WiFriends App's Materia UI**
+**WiFriends App's Material UI**
 * The Material Design UI and the Add Friends Feature screenshot is shown:
 ![Alt text](https://cloud.githubusercontent.com/assets/9555615/8251643/9433a346-167e-11e5-9eb7-cf5fe89ebfa1.jpg "Test")
 
