@@ -44,6 +44,15 @@ Leonhard Nobach, M.Sc.
 
 Screenshots:
 --------
-https://cloud.githubusercontent.com/assets/9555615/8251643/9433a346-167e-11e5-9eb7-cf5fe89ebfa1.jpg
 
+The Material Design UI and the Add Friends Feature screenshot is shown:
 ![Alt text](https://cloud.githubusercontent.com/assets/9555615/8251643/9433a346-167e-11e5-9eb7-cf5fe89ebfa1.jpg "Test")
+
+The News Feed with the friend's current Status is shown on two friend devices. 
+![Alt text](https://cloud.githubusercontent.com/assets/9555615/8251639/8abb7c80-167e-11e5-987b-f57a2d4b9f68.jpg "Before Exchange")
+
+The user's update their status on their respective devices.
+![Alt text](https://cloud.githubusercontent.com/assets/9555615/8251640/8cca88e0-167e-11e5-9459-bb712392aa9f.jpg "Before Exchange")
+
+Now the devices come into proximity, connect to each other through WiFi Direct to exchange profiles and the updated statuses are reflected on the friend's devices.
+![Alt text](https://cloud.githubusercontent.com/assets/9555615/8251641/8f7d8d26-167e-11e5-8552-3b04ff38d43b.jpg "Before Exchange")
